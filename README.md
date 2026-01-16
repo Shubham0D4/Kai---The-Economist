@@ -72,7 +72,7 @@ graph TD
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/kai-economist.git
+   git clone https://github.com/Shubham0D4/Kai---The-Economist.git
    cd kai-economist
    ```
 
