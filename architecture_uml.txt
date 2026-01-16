@@ -1,0 +1,82 @@
+@startuml Kai_Economist_Architecture
+
+skinparam roundcorner 10
+skinparam ComponentStyle rectangle
+skinparam PackageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #08102B
+skinparam ComponentBackgroundColor #EEF2FF
+skinparam ComponentBorderColor #08102B
+
+title Kai Economist - System Architecture
+
+actor "User" as user
+
+package "Client Tier (React/Vite)" {
+    component [Dashboard UI] as UI
+    component [Committee Context] as Context
+    component [API Client (Axios)] as API_Client
+}
+
+package "Gateway Tier (FastAPI)" {
+    component [Gateway API] as Gateway
+    component [HITL Manager] as HITL
+    component [Auth / JWT] as Auth
+}
+
+package "Coordination Tier" {
+    component [Debate Coordinator] as Coordinator
+    component [Logger & Tracer] as Trace
+}
+
+package "Agent Tier (Autonomous Council)" {
+    component [Charlie (Fundamental)] as Charlie
+    component [Delta (Sentiment)] as Delta
+    component [Gamma (Valuation)] as Gamma
+    component [Sigma (Judge)] as Sigma
+}
+
+package "Persistence / Data Store" {
+    database "SQLite (Users/Chat)" as SQLite
+    folder "Alpha Packets (JSON)" as AlphaPackets
+    folder "Debate Logs" as Logs
+}
+
+cloud "External Services" {
+    [Yahoo Finance] as yF
+    [Groq (LLAMA-3)] as Groq
+    [SEC EDGAR] as SEC
+}
+
+' Relationships
+user --> UI : Interaction
+UI --> Context : State Management
+Context --> API_Client : Data Requests
+API_Client --> Gateway : REST/HTTPS
+
+Gateway --> Auth : Validate
+Gateway --> HITL : Check Thresholds
+Gateway --> Coordinator : Initiate Debate
+
+Coordinator --> Charlie : Round 1-3
+Coordinator --> Delta : Round 1-3
+Coordinator --> Gamma : Round 1-3
+Coordinator --> Trace : Log Event
+
+Charlie --> Groq : LLM Reasoning
+Charlie --> SEC : Tool: SEC Filing Data
+
+Delta --> Groq : LLM Reasoning
+Delta --> yF : Tool: Market Sentiment
+
+Gamma --> yF : Tool: Quote/History
+Gamma --> Groq : LLM Reasoning
+
+Coordinator --> Sigma : Evaluate Debate
+Sigma --> Groq : Final Synthesis
+Sigma --> AlphaPackets : Generate Packet
+
+Gateway --> SQLite : Persistent State
+Gateway --> AlphaPackets : Retrieve Result
+
+@enduml

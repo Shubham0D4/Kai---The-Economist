@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_766dc86138fd1603",
+  "mandate_id": "mandate_d67e0971375e6c3d",
+  "ticker": "NVDA",
+  "persona": "sigma",
+  "recommendation": "Buy",
+  "confidence": 91.66,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 83.33,
+    "overall": 91.66499999999999
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 91.66499999999999
+  },
+  "key_risks": [
+    "## Key Evidence and Risks\n### Key Supporting Evidence\nThe top 3 points supporting the **Buy** recommendation are:\n1",
+    "### Key Risks\nThe top 3 risks identified are:\n1",
+    "**Valuation Risks**: Overvaluation is a concern, as highlighted by all agents, which could impact NVDA's stock price"
+  ],
+  "debate_log": "debate_logs/NVDA_sigma_20260101_213235.json",
+  "timestamp": "2026-01-01T21:35:58.131386",
+  "version": "AP2-v1.0",
+  "signature": "pKgxCRMryXVNrsfF/B/IB8gMPywQXFfwOKAO2Y2TSJOJlwH1dF7wWBQ1X7czfLrLLxaiS9bfjA0xABfaO7zOBg==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_766dc86138fd1603"
+}

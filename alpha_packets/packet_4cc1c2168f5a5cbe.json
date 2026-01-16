@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_4cc1c2168f5a5cbe",
+  "mandate_id": "mandate_e08aa061237c9f24",
+  "ticker": "NVDA",
+  "persona": "sigma",
+  "recommendation": "Buy",
+  "confidence": 83.34,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 66.67,
+    "overall": 83.33500000000001
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 83.33500000000001
+  },
+  "key_risks": [
+    "**Valuation and Risk-Reward Profile**: Although valuations are slightly above historical averages, the DCF model suggests a reasonable intrinsic value given NVDA's growth prospects, and risk metrics indicate a balanced risk-reward profile",
+    "### Key Risks\nThe top 3 risks identified across the debate are:\n1",
+    "**Valuation Risks**: The potential for valuation multiples to contract poses a significant risk to NVDA's stock price"
+  ],
+  "debate_log": "debate_logs/NVDA_sigma_20260101_131909.json",
+  "timestamp": "2026-01-01T13:22:27.388894",
+  "version": "AP2-v1.0",
+  "signature": "/7V+z7ShQyyY9qMwpaD/mpJtCSUJHfORsrI9FF66UsAmbUxe1Dy2lJFqccC6w6pxA8M7uI5YMYSJpReHumcrDA==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_4cc1c2168f5a5cbe"
+}

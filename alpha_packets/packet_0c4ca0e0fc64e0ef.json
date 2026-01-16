@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_0c4ca0e0fc64e0ef",
+  "mandate_id": "mandate_aa3b8569d5d7fdc5",
+  "ticker": "NVDA",
+  "persona": "alpha",
+  "recommendation": "Buy",
+  "confidence": 100.0,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 100.0,
+    "overall": 100.0
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 100.0
+  },
+  "key_risks": [
+    "**Innovative Products and Competitive Positioning**: NVDA's innovative approach to GPUs and its strong brand loyalty are expected to mitigate potential risks from competition and supply chain disruptions, supporting its premium valuation",
+    "### Key Risks\nThe top 3 risks identified in the debate are:\n1",
+    "**Valuation Multiples**: The risk that NVDA's valuation multiples may be overstretched, given its high growth rates and premium valuation"
+  ],
+  "debate_log": "debate_logs/NVDA_alpha_20260101_115426.json",
+  "timestamp": "2026-01-01T11:57:47.678677",
+  "version": "AP2-v1.0",
+  "signature": "bIQpf5ZfzKmNj8HH0vvR5bf1iSEcACaOHA1dYqRQm8ML42zHadXHAOAcBAE8YHlqvLJux7Pb19+ucdOvNGXtAQ==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_0c4ca0e0fc64e0ef"
+}

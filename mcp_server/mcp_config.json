@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "kai-data-backbone": {
+            "command": "python",
+            "args": [
+                "/home/shubham/Kai - Economist/mcp_server/main.py"
+            ],
+            "env": {
+                "PYTHONPATH": "/home/shubham/Kai - Economist/mcp_server"
+            }
+        }
+    }
+}

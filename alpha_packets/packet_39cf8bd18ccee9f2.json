@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_39cf8bd18ccee9f2",
+  "mandate_id": "mandate_168594d32c13b4a8",
+  "ticker": "NVDA",
+  "persona": "sigma",
+  "recommendation": "Hold",
+  "confidence": 91.66,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 83.33,
+    "overall": 91.66499999999999
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 91.66499999999999
+  },
+  "key_risks": [
+    "While Delta and Gamma present bullish perspectives, Charlie's neutral stance and concerns about valuation multiples and industry risks cannot be disregarded",
+    "**Sustainable growth driven by AI and gaming demand**: DCF models suggest sustainable growth driven by AI and gaming demand, with risk metrics indicating moderate volatility and attractive risk-adjusted returns (Gamma)",
+    "### Key Risks\nThe top 3 risks identified are:\n1"
+  ],
+  "debate_log": "debate_logs/NVDA_sigma_20260101_131540.json",
+  "timestamp": "2026-01-01T13:19:09.804897",
+  "version": "AP2-v1.0",
+  "signature": "39hMyUjV6Zy/8Tvo8kCJwGESE5BYyXjn5FixUvtXD69fnOpB3dgjFZzPOLULkrp002kUXHD7MBy8YRWjzl4UCw==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_39cf8bd18ccee9f2"
+}

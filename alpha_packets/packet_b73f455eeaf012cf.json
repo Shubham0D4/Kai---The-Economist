@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_b73f455eeaf012cf",
+  "mandate_id": "mandate_96e51af88eda5b7f",
+  "ticker": "MSFT",
+  "persona": "sigma",
+  "recommendation": "Buy",
+  "confidence": 91.66,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 83.33,
+    "overall": 91.66499999999999
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 91.66499999999999
+  },
+  "key_risks": [
+    "**Reasonable Valuation**: Gamma's valuation analysis suggests that while MSFT's valuation metrics indicate a premium, the company's strong cloud growth and dividend yield, along with reasonable risk-adjusted returns, justify its current valuation",
+    "Key Risks\nThe top three risks identified across the debate are:\n1",
+    "**Intensifying Competition in Cloud Computing**: All agents highlighted the challenge posed by increasing competition in the cloud market, which could impact MSFT's Azure segment"
+  ],
+  "debate_log": "debate_logs/MSFT_sigma_20260101_125522.json",
+  "timestamp": "2026-01-01T12:58:43.117645",
+  "version": "AP2-v1.0",
+  "signature": "AM9d5EmFxVRk2BjKwjDgfEUfpKPjy2gY//XvCYu1q5DkMfZCZc8/DO1V7q5a8fdD+9Y/a518hW1p6PyLG6oNAw==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_b73f455eeaf012cf"
+}

@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_fec753da7cfcde1b",
+  "mandate_id": "mandate_bc857c70ec687d95",
+  "ticker": "AAPL",
+  "persona": "zen",
+  "recommendation": "Buy",
+  "confidence": 91.66,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 83.33,
+    "overall": 91.66499999999999
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 91.66499999999999
+  },
+  "key_risks": [
+    "## Evidence and Risks\n### Key Supporting Evidence\nThe top 3 points from the debate supporting the buy recommendation are:\n1",
+    "### Key Risks\nThe top 3 risks identified in the debate are:\n1",
+    "**Regulatory Challenges**: Potential regulatory risks could impact AAPL's operations and profitability"
+  ],
+  "debate_log": "debate_logs/AAPL_zen_20260101_214407.json",
+  "timestamp": "2026-01-01T21:47:28.514900",
+  "version": "AP2-v1.0",
+  "signature": "WuyZ+uE2L/hPqDoiOJAAW5cg3RC1hRyOaJ+RVG8AUVqIjZoSFSo7b6b6Nq6m235BJe/f29z2sFDnlCutWZquBQ==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_fec753da7cfcde1b"
+}

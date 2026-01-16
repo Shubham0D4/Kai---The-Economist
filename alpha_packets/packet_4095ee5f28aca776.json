@@ -1,0 +1,33 @@
+{
+  "packet_id": "packet_4095ee5f28aca776",
+  "mandate_id": "mandate_3b69a26ea2affc64",
+  "ticker": "MSFT",
+  "persona": "sigma",
+  "recommendation": "Buy",
+  "confidence": 91.66,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 83.33,
+    "overall": 91.66499999999999
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 91.66499999999999
+  },
+  "key_risks": [
+    "### Key Risks\nThe top 3 risks identified in the debate are:\n1",
+    "**Valuation multiples contracting**: All agents mention the risk of valuation multiples contracting, which could negatively impact MSFT's stock price",
+    "**Intensifying competition in cloud computing**: Charlie, Delta, and Gamma all note the risk of increased competition in the cloud space, which could challenge MSFT's market position"
+  ],
+  "debate_log": "debate_logs/MSFT_sigma_20260101_120903.json",
+  "timestamp": "2026-01-01T12:12:26.785719",
+  "version": "AP2-v1.0",
+  "signature": "7ZBzzVdkqJiJwP5FNGnclmPgKAgXFzGQQpjsMrhMyOKnLlwjwATa/B+OB0mXjna2SNgeteCut7lpjwEjINZ5Dg==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_4095ee5f28aca776"
+}

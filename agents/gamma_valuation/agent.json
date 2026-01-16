@@ -1,0 +1,193 @@
+{
+    "name": "Gamma",
+    "version": "1.0.0",
+    "role": "Valuation Analysis Specialist",
+    "description": "Performs quantitative valuation using DCF models, multiples analysis, and risk metrics. Focuses on hard math and data-driven analysis with persona-adjusted parameters.",
+    "capabilities": [
+        "Discounted Cash Flow (DCF) modeling",
+        "Valuation multiples analysis (PE, PEG ratios)",
+        "Risk metrics calculation (volatility, Sharpe ratio)",
+        "Moving average analysis (50-day, 200-day)",
+        "Sensitivity and scenario analysis",
+        "Risk persona parameter adjustment (Zen/Alpha)"
+    ],
+    "mcp_tools_required": [
+        "calculate_valuation_metrics",
+        "calculate_risk_metrics"
+    ],
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "ticker": {
+                "type": "string",
+                "description": "Stock ticker symbol (e.g., 'AAPL', 'MSFT')",
+                "pattern": "^[A-Z]{1,5}$"
+            },
+            "price": {
+                "type": "number",
+                "description": "Current stock price",
+                "minimum": 0
+            },
+            "eps": {
+                "type": "number",
+                "description": "Earnings per share"
+            },
+            "growth_rate": {
+                "type": "number",
+                "description": "Expected earnings growth rate (as percentage)",
+                "minimum": -100,
+                "maximum": 1000
+            },
+            "free_cash_flows": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                },
+                "description": "Optional projected free cash flows for DCF analysis"
+            },
+            "shares_outstanding": {
+                "type": "number",
+                "description": "Number of shares outstanding (required for DCF)",
+                "minimum": 0
+            },
+            "historical_prices": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                },
+                "description": "Historical price data for risk metrics"
+            },
+            "persona": {
+                "type": "string",
+                "description": "Risk persona for parameter adjustment",
+                "enum": [
+                    "zen",
+                    "alpha",
+                    "balanced"
+                ],
+                "default": "balanced"
+            }
+        },
+        "required": [
+            "ticker"
+        ]
+    },
+    "output_schema": {
+        "type": "object",
+        "properties": {
+            "agent": {
+                "type": "string",
+                "const": "Gamma"
+            },
+            "ticker": {
+                "type": "string"
+            },
+            "persona": {
+                "type": "string"
+            },
+            "valuation_metrics": {
+                "type": "object",
+                "properties": {
+                    "pe_ratio": {
+                        "type": "number"
+                    },
+                    "peg_ratio": {
+                        "type": "number"
+                    },
+                    "dcf_analysis": {
+                        "type": "object"
+                    }
+                }
+            },
+            "risk_metrics": {
+                "type": "object",
+                "properties": {
+                    "volatility": {
+                        "type": "number"
+                    },
+                    "sharpe_ratio": {
+                        "type": "number"
+                    },
+                    "ma_50": {
+                        "type": "number"
+                    },
+                    "ma_200": {
+                        "type": "number"
+                    }
+                }
+            },
+            "analysis": {
+                "type": "string",
+                "description": "Comprehensive quantitative analysis"
+            },
+            "valuation": {
+                "type": "string",
+                "enum": [
+                    "Overvalued",
+                    "Fairly Valued",
+                    "Undervalued"
+                ]
+            },
+            "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+            }
+        }
+    },
+    "persona_profiles": {
+        "zen": {
+            "focus": "Conservative valuation with downside protection",
+            "parameters": {
+                "discount_rate": 0.12,
+                "terminal_growth": 0.025,
+                "approach": "Higher discount rates, conservative growth assumptions"
+            },
+            "priorities": [
+                "Downside risk assessment",
+                "Conservative DCF assumptions",
+                "High margin of safety",
+                "Volatility and drawdown analysis",
+                "Risk-adjusted returns"
+            ]
+        },
+        "alpha": {
+            "focus": "Growth-oriented valuation with upside focus",
+            "parameters": {
+                "discount_rate": 0.08,
+                "terminal_growth": 0.035,
+                "approach": "Lower discount rates, optimistic growth assumptions"
+            },
+            "priorities": [
+                "Upside potential assessment",
+                "Growth-focused DCF assumptions",
+                "Momentum indicators",
+                "Positive catalysts",
+                "Maximum return scenarios"
+            ]
+        },
+        "balanced": {
+            "focus": "Standard valuation with peer benchmarking",
+            "parameters": {
+                "discount_rate": 0.10,
+                "terminal_growth": 0.03,
+                "approach": "Market-standard WACC and growth rates"
+            },
+            "priorities": [
+                "Peer multiple comparison",
+                "Intrinsic value consensus",
+                "Historical valuation bands",
+                "Mid-case DCF scenarios",
+                "Risk-reward symmetry"
+            ]
+        }
+    },
+    "model": "gemini-2.0-flash-exp",
+    "author": "Kai - Economist Team",
+    "tags": [
+        "valuation-analysis",
+        "dcf-modeling",
+        "quantitative-analysis",
+        "risk-metrics"
+    ]
+}

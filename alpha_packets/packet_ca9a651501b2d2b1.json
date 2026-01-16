@@ -1,0 +1,32 @@
+{
+  "packet_id": "packet_ca9a651501b2d2b1",
+  "mandate_id": "mandate_fcd1fbb226bf218c",
+  "ticker": "MSFT",
+  "persona": "sigma",
+  "recommendation": "Buy",
+  "confidence": 91.66,
+  "quality_scores": {
+    "faithfulness": 100,
+    "consistency": 83.33,
+    "overall": 91.66499999999999
+  },
+  "debate_summary": {
+    "rounds": 3,
+    "agents": [
+      "charlie",
+      "delta",
+      "gamma"
+    ],
+    "quality": 91.66499999999999
+  },
+  "key_risks": [
+    "## Key Risks\nThe top 3 risks identified in the debate are:\n1",
+    "**Regulatory challenges**: MSFT may face regulatory scrutiny, particularly in the cloud computing space, which could affect its operations and revenue streams"
+  ],
+  "debate_log": "debate_logs/MSFT_sigma_20260101_125843.json",
+  "timestamp": "2026-01-01T13:02:02.329476",
+  "version": "AP2-v1.0",
+  "signature": "nTPW9Ewq91fRk6Jb3STyoukdkYytJrQZeidNEfZ/qlkeOSVx35qfPonCfWhTGvoyPiiQrXVn0Ge45Yc7BAzSCg==",
+  "public_key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQURUc3Y4d21FbStXbW5zeDhydXg0OURYM3pSSFA3ZTFMTnRjTUhMSUJFNDA9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo=",
+  "verification_url": "https://kai.verify/packet_ca9a651501b2d2b1"
+}

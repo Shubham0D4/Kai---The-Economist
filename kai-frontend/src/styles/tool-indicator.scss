@@ -1,0 +1,38 @@
+.tool-call-indicator-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1050; // Above most Bootstrap components
+  pointer-events: none; // Let clicks pass through if needed
+  animation: slideIn 0.3s ease-out;
+
+  .tool-pill {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
+    
+    // Dark mode support if needed later
+    @media (prefers-color-scheme: dark) {
+      background: rgba(33, 37, 41, 0.9);
+      color: #fff;
+    }
+  }
+
+  .spin-animation {
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

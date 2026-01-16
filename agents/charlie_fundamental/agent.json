@@ -1,0 +1,139 @@
+{
+    "name": "Charlie",
+    "version": "1.0.0",
+    "role": "Fundamental Analysis Specialist",
+    "description": "Analyzes SEC filings, financial statements, and competitive advantages. Focuses on value investing, economic moat analysis, and financial health assessment.",
+    "capabilities": [
+        "SEC filing analysis (10-K, 10-Q, 8-K)",
+        "Balance sheet and income statement evaluation",
+        "Economic moat and competitive advantage assessment",
+        "Management quality and corporate governance evaluation",
+        "Industry dynamics and competitive positioning analysis",
+        "Risk persona adaptation (Zen/Alpha)"
+    ],
+    "mcp_tools_required": [
+        "fetch_filing_data"
+    ],
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "ticker": {
+                "type": "string",
+                "description": "Stock ticker symbol (e.g., 'AAPL', 'MSFT')",
+                "pattern": "^[A-Z]{1,5}$"
+            },
+            "filing_type": {
+                "type": "string",
+                "description": "Type of SEC filing to analyze",
+                "enum": [
+                    "10-K",
+                    "10-Q",
+                    "8-K"
+                ],
+                "default": "10-K"
+            },
+            "persona": {
+                "type": "string",
+                "description": "Risk persona for analysis perspective",
+                "enum": [
+                    "zen",
+                    "alpha",
+                    "balanced"
+                ],
+                "default": "balanced"
+            }
+        },
+        "required": [
+            "ticker"
+        ]
+    },
+    "output_schema": {
+        "type": "object",
+        "properties": {
+            "agent": {
+                "type": "string",
+                "const": "Charlie"
+            },
+            "ticker": {
+                "type": "string"
+            },
+            "persona": {
+                "type": "string"
+            },
+            "company_name": {
+                "type": "string"
+            },
+            "filing_analyzed": {
+                "type": "object",
+                "properties": {
+                    "form": {
+                        "type": "string"
+                    },
+                    "filing_date": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                }
+            },
+            "analysis": {
+                "type": "string",
+                "description": "Comprehensive fundamental analysis"
+            },
+            "recommendation": {
+                "type": "string",
+                "enum": [
+                    "Bullish",
+                    "Neutral",
+                    "Bearish"
+                ]
+            },
+            "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+            }
+        }
+    },
+    "persona_profiles": {
+        "zen": {
+            "focus": "Conservative fundamental analysis",
+            "priorities": [
+                "Cash flow stability",
+                "Low debt levels",
+                "Dividend sustainability",
+                "Downside protection",
+                "Economic moat strength"
+            ]
+        },
+        "alpha": {
+            "focus": "Growth-oriented fundamental analysis",
+            "priorities": [
+                "Revenue growth acceleration",
+                "Market share expansion",
+                "Innovation pipeline",
+                "Competitive positioning",
+                "Upside catalysts"
+            ]
+        },
+        "balanced": {
+            "focus": "Pragmatic fundamental analysis",
+            "priorities": [
+                "Sustainable growth",
+                "Reasonable debt/equity",
+                "Core business strength",
+                "Sector relative performance",
+                "Consistency of earnings"
+            ]
+        }
+    },
+    "model": "gemini-2.0-flash-exp",
+    "author": "Kai - Economist Team",
+    "tags": [
+        "fundamental-analysis",
+        "value-investing",
+        "moat-analysis",
+        "sec-filings"
+    ]
+}
